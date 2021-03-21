@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wedding-Card</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+ 
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
+  <style type="text/css">
+    .flip-card
+    {
+      background-color: transparent;
+      perspective: 1000px;
+      width: 400px;
+      height:620px;
+      margin: 10px auto;
+    }
+    @media only screen and (max-width: 900px) {
+  .flip-card 
+  {
+    width: 100%;
+    margin: 10px auto;
+  }
+
+}
+    .flip-card-inner
+    {
+      position: relative;
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      transition: .6s;
+      transform-style: preserve-3d;
+       box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+       transition-delay: 0.5s;
+    }
+    .flip-card:hover .flip-card-inner
+    {
+      transform: rotateY(180deg);
+    }
+    .flip-card-front, .flip-card-back
+    {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      -webkit-backface-visibility: hidden;
+      
+    }
+    .flip-card-front
+    {
+      background-color: #bbb;
+      color: #fff;
+      background-image: url(fff.jpg);
+    }
+    .flip-card-front .mantra p
+    {
+    font-size: 14px;
+      color: #fff;
+    }
+     .flip-card-front h6
+    {
+      color: #fff;
+    }
+     .flip-card-front .mantra span
+    {
+
+      font-family: 'Tangerine', cursive;
+      font-size: 32px;
+    }
+    .flip-card-back {
+  background-image: url(pj.jpg);
+  background-repeat: no-repeat;
+  color: white;
+  transform: rotateY(180deg);
+
+}
+.flip-card-back p
+{
+  font-size: 28px;
+  font-family: 'Tangerine', cursive;
+}
+.rsvp
+{
+  float: left;
+  text-align: left;
+  font-size: 12px;
+  padding-left: 10px;
+}
+.rsvprgt
+{
+  float: right;
+  text-align: right;
+  font-size: 12px;
+  padding-right: 10px;
+}
+
+  </style>
+
+</head>
+<body>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <br /><br />
+      <img src="ganesha.png" height="130px";>
+     <div class="mantra"><h6 lang="hi">॥ श्री गणेशाय नमः ॥</h6>
+     <p lang="hi">वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ।<br>
+निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा॥
+</p>
+<img src="line.png" width="200px;">
+<br /><br />
+<span>Her Name<br><span style="font-size: 18px;">(D/O Mrs. Mother's Name & Mr. Father's Name)</span><br /><span style="font-size: 24px;">---- Weds ----</span><br />Mohan Nishad<br><span style="font-size: 18px;">(D/O Mrs. Mother's Name & Mr. Father's Name)</span></span>
+
+<img src="line.png" width="200px;"></p></div>
+
+<h5 style="padding-left: 10px; padding-right: 10px;">Vanue: Vill- Koilikhal, Post- Pandey Kodar, Dist- Gorakhpur (U.P.)</h5>
+    </div>
+    <div class="flip-card-back">
+      <br><img src="ganesha.png" height="90px";>
+      <br>
+     <p>Save the Date<br><img src="line.png" width="200px;"><br>
+_____ Haldi Caremony _____<br><br>21 / April / 2021<br><br>
+_____ Wedding Caremony _____<br><br>22 / April / 2021<br><br>
+<img src="wed.png" width="90px;"></p>
+<div class="rsvp">
+  R.S.V.P.:<br>
+  Anyone's Name<br>
+  Phone No.- 91-0123456789
+</div>
+<div class="rsvprgt">
+  The best compliments from:<br>
+  Anyone's Name1<br>
+  Anyone's Name2
+</div>
+
+    </div>
+  </div>
+</div>
+</body>
+</html>
